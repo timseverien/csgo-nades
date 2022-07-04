@@ -1,50 +1,175 @@
-import { ThrowFlag, ThrowStance, NadeThrow } from './Nade';
+import { NadeThrow, ThrowFlag, ThrowStance } from './Nade';
 
 const nades: NadeThrow[] = [
-  {
-    map: 'de_mirage',
-    tickRate: 64,
-    location: {
-      name: 'T-spawn',
-      position: [0, 0, 0],
-    },
-    target: {
-      name: 'short',
-      position: [0, 0, 0],
-    },
-    throw: {
-      movement: [
-        ThrowFlag.jump,
-        ThrowFlag.movingForward
-      ],
-      stance: ThrowStance.crouching,
-    },
-    throwAnimationUrl: '',
-    throwPointImageUrl: '',
-    throwReleaseImageUrl: '',
-  },
-  {
-    map: 'de_mirage',
-    tickRate: 64,
-    location: {
-      name: 'Stairs',
-      position: [0, 0, 0],
-    },
-    target: {
-      name: 'short',
-      position: [0, 0, 0],
-    },
-    throw: {
-      movement: [
-        ThrowFlag.jump,
-        ThrowFlag.movingForward
-      ],
-      stance: ThrowStance.crouching,
-    },
-    throwAnimationUrl: '',
-    throwPointImageUrl: '',
-    throwReleaseImageUrl: '',
-  },
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 'b-halls', position: [0, 0, 0] },
+		target: { name: 'connector', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-B-halls-to-connector.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 'ct-spawn', position: [0, 0, 0] },
+		target: { name: 'palace', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-CT-spawn-to-palace.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 'ct-spawn', position: [0, 0, 0] },
+		target: { name: 'ramp', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-CT-spawn-to-ramp.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 't-spawn', position: [0, 0, 0] },
+		target: { name: 'b-default', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-T-spawn-to-B-default.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 't-spawn', position: [0, 0, 0] },
+		target: { name: 'b-shops-window', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-T-spawn-to-B-shops-window-2.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 't-spawn', position: [0, 0, 0] },
+		target: { name: 'b-shops-window', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-T-spawn-to-B-shops-window.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 't-spawn', position: [0, 0, 0] },
+		target: { name: 'connector', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-T-spawn-to-connector.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 't-spawn', position: [0, 0, 0] },
+		target: { name: 'jungle', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-T-spawn-to-jungle.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 't-spawn', position: [0, 0, 0] },
+		target: { name: 'short', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-T-spawn-to-short.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 't-spawn', position: [0, 0, 0] },
+		target: { name: 'ticketbooth', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-T-spawn-to-ticketbooth.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 'top-mid', position: [0, 0, 0] },
+		target: { name: 'b-site', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-top-mid-to-B-site.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 'top-mid', position: [0, 0, 0] },
+		target: { name: 'shops-door', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-top-mid-to-shops-door.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
+	{
+		map: 'de_mirage',
+		tickRate: 64,
+		location: { name: 'top-mid', position: [0, 0, 0] },
+		target: { name: 'short', position: [0, 0, 0] },
+		throwAnimationUrl: 'nades/de_mirage-64-top-mid-to-short.mp4',
+		throwPointImageUrl: '',
+		throwReleaseImageUrl: '',
+		throw: {
+			movement: [ThrowFlag.movingForward],
+			stance: ThrowStance.standing,
+		},
+	},
 ];
 
 export default nades;

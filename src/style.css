@@ -1,19 +1,23 @@
 body {
-  color: #222;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+	color: #222;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 dl {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 0.5rem 2rem;
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 0.5rem 2rem;
 }
 
 dt {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 dd {
-  margin: 0;
+	margin: 0;
+}
+
+video {
+	max-width: 100%;
 }

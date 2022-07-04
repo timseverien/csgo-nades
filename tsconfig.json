@@ -1,10 +1,11 @@
 {
-  "compilerOptions": {
-    "isolatedModules": true,
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "target": "ESNext",
-    "types": ["vite/client"]
-  }
+	"compilerOptions": {
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"target": "ESNext",
+		"types": ["vite/client"]
+	}
 }

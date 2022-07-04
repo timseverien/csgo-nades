@@ -1,8 +1,13 @@
 {
-  "bracketSpacing": true,
-  "jsxBracketSameLine": false,
+  "importOrder": [
+    "^[a-z]",
+    "^../",
+    "^./"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "printWidth": 100,
   "singleQuote": true,
-  "tabWidth": 2,
-  "trailingComma": "none",
-  "useTabs": false
+  "trailingComma": "all",
+  "useTabs": true
 }

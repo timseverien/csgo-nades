@@ -15,7 +15,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},
@@ -33,7 +33,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},
@@ -51,7 +51,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},
@@ -69,7 +69,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.movingForward, ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},
@@ -105,7 +105,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.movingForward, ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},
@@ -141,7 +141,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},
@@ -159,7 +159,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},
@@ -177,7 +177,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},
@@ -195,7 +195,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},
@@ -231,7 +231,7 @@ const nades: NadeThrow[] = [
 		throwPointImageUrl: [],
 		throwReleaseImageUrl: [],
 		throw: {
-			movement: [ThrowFlag.movingForward],
+			movement: [ThrowFlag.jump],
 			stance: ThrowStance.standing,
 		},
 	},

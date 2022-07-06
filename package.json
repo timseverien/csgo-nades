@@ -11,20 +11,20 @@
 		"optimize": "node scripts/optimize-videos.mjs public/nades/_original public/nades"
 	},
 	"devDependencies": {
-		"@astrojs/preact": "^0.2.0",
+		"@astrojs/preact": "^0.3.1",
 		"@types/lodash": "^4.14.182",
-		"@typescript-eslint/eslint-plugin": "^5.30.0",
-		"@typescript-eslint/parser": "^5.30.0",
+		"@typescript-eslint/eslint-plugin": "^5.30.5",
+		"@typescript-eslint/parser": "^5.30.5",
 		"astro": "^1.0.0-beta.57",
-		"eslint": "^8.18.0",
+		"eslint": "^8.19.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-jsx-a11y": "^6.6.0",
 		"eslint-plugin-react": "^7.30.1",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"ffmpeg-static": "^5.0.0",
+		"ffmpeg-static": "^5.0.2",
 		"globby": "^13.1.2",
-		"preact": "^10.8.2"
+		"preact": "^10.9.0"
 	},
 	"dependencies": {
 		"@trivago/prettier-plugin-sort-imports": "^3.2.0",

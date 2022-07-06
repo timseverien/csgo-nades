@@ -11,8 +11,8 @@ export enum ThrowDifficulty {
 
 export enum ThrowFlag {
 	jump = 'jump',
-	movingBackwards = 'move backwards',
-	movingForward = 'move forwards',
+	movingBackwards = 'move backward',
+	movingForward = 'move forward',
 	movingLeft = 'move left',
 	movingRight = 'move right',
 }
@@ -22,12 +22,22 @@ export enum ThrowStance {
 	standing = 'standing',
 }
 
+interface ImageSource {
+	url: string;
+	type: 'image/jpg' | 'image/webp';
+}
+
+interface VideoSource {
+	url: string;
+	type: 'video/mp4';
+}
+
 // TODO: infer location/target name based on position?
 export interface NadeThrow {
 	map: string;
-	throwAnimationUrl: string;
-	throwPointImageUrl: string;
-	throwReleaseImageUrl?: string;
+	throwAnimationUrl: VideoSource[];
+	throwPointImageUrl: ImageSource[];
+	throwReleaseImageUrl?: ImageSource[];
 	tickRate: number;
 
 	location: {

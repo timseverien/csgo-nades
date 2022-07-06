@@ -3,9 +3,11 @@ import { NadeThrow } from '../../../../Nade';
 import { PillList } from '../../../../components/Pill';
 import {
 	createLocationListFromNadeList,
+	createLocationTag,
 	createMapListFromNadeList,
+	createTargetListFromNadeList,
 	createTickRateOptionsFromNadeList,
-	filterNadeListByMapAndTickRate,
+	filterNadeListByNadeFilterResult,
 } from '../../functions';
 import { NadeFilterResult } from '../../types';
 import styles from './style.module.css';
@@ -24,9 +26,30 @@ export const NadeFilter: FunctionalComponent<{
 }> = ({ nadeList, nadeFilter, onChange }) => {
 	const mapOptions = createMapListFromNadeList(nadeList);
 	const tickRateOptions = createTickRateOptionsFromNadeList(nadeList);
+
+	const targetOptions = createTargetListFromNadeList(
+		filterNadeListByNadeFilterResult(nadeList, {
+			location: null,
+			map: nadeFilter.map,
+			target: null,
+			tickRate: nadeFilter.tickRate,
+		}),
+	).map((target) => ({
+		label: createLocationTag(target.split('-').join(' ')),
+		value: target,
+	}));
+
 	const locationOptions = createLocationListFromNadeList(
-		filterNadeListByMapAndTickRate(nadeList, nadeFilter.map, nadeFilter.tickRate),
-	);
+		filterNadeListByNadeFilterResult(nadeList, {
+			location: null,
+			map: nadeFilter.map,
+			target: nadeFilter.target,
+			tickRate: nadeFilter.tickRate,
+		}),
+	).map((location) => ({
+		label: createLocationTag(location.split('-').join(' ')),
+		value: location,
+	}));
 
 	return (
 		<dl>
@@ -37,11 +60,14 @@ export const NadeFilter: FunctionalComponent<{
 					onSelect={(map: string) =>
 						onChange({
 							...nadeFilter,
+							location: null,
 							map,
+							target: null,
 						})
 					}
 				/>
 			</FilterRow>
+
 			<FilterRow label="Tick rate">
 				<PillList
 					options={tickRateOptions}
@@ -49,23 +75,44 @@ export const NadeFilter: FunctionalComponent<{
 					onSelect={(tickRate: number) =>
 						onChange({
 							...nadeFilter,
+							location: null,
+							target: null,
 							tickRate,
 						})
 					}
 				/>
 			</FilterRow>
-			<FilterRow label="Location">
+
+			<FilterRow label="Target">
 				<PillList
-					options={locationOptions}
-					value={nadeFilter.location}
-					onSelect={(location: string) =>
+					includeAll={true}
+					options={targetOptions}
+					value={nadeFilter.target}
+					onSelect={(target: string) =>
 						onChange({
 							...nadeFilter,
-							location,
+							location: null,
+							target,
 						})
 					}
 				/>
 			</FilterRow>
+
+			{locationOptions.length > 1 && (
+				<FilterRow label="Throw location">
+					<PillList
+						includeAll={true}
+						options={locationOptions}
+						value={nadeFilter.location}
+						onSelect={(location: string) =>
+							onChange({
+								...nadeFilter,
+								location,
+							})
+						}
+					/>
+				</FilterRow>
+			)}
 		</dl>
 	);
 };

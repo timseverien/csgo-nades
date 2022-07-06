@@ -1,0 +1,13 @@
+.card {
+	border-radius: 1rem;
+	box-shadow: var(--elevation-1);
+	overflow: hidden;
+}
+
+.content {
+	padding: 1.5rem 1rem;
+}
+
+.header {
+	position: relative;
+}

@@ -8,6 +8,7 @@ export function Index() {
 	const [nadeFilter, setNadeFilter] = useState({
 		location: null,
 		map: 'de_mirage',
+		target: null,
 		tickRate: 64,
 	});
 
@@ -17,7 +18,10 @@ export function Index() {
 		<main>
 			<h1>Counter-Strike: Global Offensive nades</h1>
 
-			<NadeFilter nadeFilter={nadeFilter} nadeList={nadeList} onChange={setNadeFilter} />
+			<div style={{ marginBlockEnd: '4rem' }}>
+				<NadeFilter nadeFilter={nadeFilter} nadeList={nadeList} onChange={setNadeFilter} />
+			</div>
+
 			<NadeItemList nades={nadeListResult} />
 		</main>
 	);

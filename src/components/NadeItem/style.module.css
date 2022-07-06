@@ -1,9 +1,56 @@
 .imageContainer {
-	object-fit: contain;   
+	aspect-ratio: 16/9;
+
+	margin-block-start: 1rem;
+	margin-inline-start: 1rem;
+}
+
+.imageContainer > * {
+	display: block;
+	border-radius: 1rem;
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+	box-shadow: var(--elevation-1);
 }
 
 .itemList {
 	display: grid;
 	gap: 2rem;
 	grid-template-columns: repeat(auto-fit, 40rem);
+}
+
+.infoCard {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	padding: 2rem;
+	margin: 0;
+	z-index: 1;
+	width: 33.333%;
+
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 1rem;
+	background-color: #fff;
+	box-shadow: var(--elevation-2);
+}
+
+.infoCard dt {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.infoCard dd {
+	margin: 0;
+}
+
+.preview {
+	position: relative;
 }

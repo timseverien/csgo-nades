@@ -1,22 +1,22 @@
 .pill {
-	--color-fill: transparent;
-	--color-outline: #222;
-	--color-foreground: #222;
+	--color-background: transparent;
+	--color-foreground: #666;
+	--color-outline: transparent;
 
 	display: inline-block;
 	padding: 0.25rem 0.75rem;
 	border-radius: 1rem;
 
-	background-color: var(--color-fill);
+	background-color: var(--color-background);
 	border: 1px solid var(--color-outline);
 
 	color: var(--color-foreground);
-	font-weight: bold;
 }
 
 .pillActive {
-	--color-fill: #222;
-	--color-foreground: white;
+	--color-foreground: #fff;
+	--color-underline: var(--color-foreground);
+	--color-background: var(--color-primary);
 }
 
 .pillList {
@@ -26,7 +26,6 @@
 
 	flex-flow: row wrap;
 	list-style-type: none;
-	gap: 0.25rem;
 }
 
 .pillList + .pillList {

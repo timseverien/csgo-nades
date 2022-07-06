@@ -8,7 +8,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'connector', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-b-halls-to-connector.mp4',
+				url: 'nades/de_mirage-64-b-halls-to-connector.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -26,7 +26,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'palace', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-ct-spawn-to-palace.mp4',
+				url: 'nades/de_mirage-64-ct-spawn-to-palace.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -44,7 +44,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'ramp', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-ct-spawn-to-ramp.mp4',
+				url: 'nades/de_mirage-64-ct-spawn-to-ramp.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -62,7 +62,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'b-default', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-t-spawn-to-b-default.mp4',
+				url: 'nades/de_mirage-64-t-spawn-to-b-default.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -80,7 +80,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'shops-window', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-t-spawn-to-shops-window-2.mp4',
+				url: 'nades/de_mirage-64-t-spawn-to-shops-window-2.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -98,7 +98,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'shops-window', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-t-spawn-to-shops-window.mp4',
+				url: 'nades/de_mirage-64-t-spawn-to-shops-window.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -116,7 +116,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'connector', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-t-spawn-to-connector.mp4',
+				url: 'nades/de_mirage-64-t-spawn-to-connector.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -134,7 +134,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'jungle', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-t-spawn-to-jungle.mp4',
+				url: 'nades/de_mirage-64-t-spawn-to-jungle.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -152,7 +152,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'short', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-t-spawn-to-short.mp4',
+				url: 'nades/de_mirage-64-t-spawn-to-short.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -170,7 +170,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'ticketbooth', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-t-spawn-to-ticketbooth.mp4',
+				url: 'nades/de_mirage-64-t-spawn-to-ticketbooth.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -188,7 +188,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'b-site', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-top-mid-to-b-site.mp4',
+				url: 'nades/de_mirage-64-top-mid-to-b-site.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -206,7 +206,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'shops-door', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-top-mid-to-shops-door.mp4',
+				url: 'nades/de_mirage-64-top-mid-to-shops-door.mp4',
 				type: 'video/mp4',
 			},
 		],
@@ -224,7 +224,7 @@ const nades: NadeThrow[] = [
 		target: { name: 'short', position: [0, 0, 0] },
 		throwAnimationUrl: [
 			{
-				url: '/nades/de_mirage-64-top-mid-to-short.mp4',
+				url: 'nades/de_mirage-64-top-mid-to-short.mp4',
 				type: 'video/mp4',
 			},
 		],

@@ -98,12 +98,6 @@ export const NadeItemPreview: FunctionalComponent<{
 				<dd>
 					{formatLocation(nade.location.name)} → {formatLocation(nade.target.name)}
 				</dd>
-
-				<dt>Stance</dt>
-				<dd>{formatText(nade.throw.stance)}</dd>
-
-				<dt>Movement</dt>
-				<dd>{listFormatter.format(nade.throw.movement.map(formatText))}</dd>
 			</dl>
 		</Card>
 

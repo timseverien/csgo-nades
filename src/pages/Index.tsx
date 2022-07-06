@@ -1,4 +1,6 @@
 import { useState } from 'preact/hooks';
+import { Flow } from '../components/Flow';
+import { Heading } from '../components/Heading';
 import { NadeItemList } from '../components/NadeItem';
 import { NadeFilter } from '../features/filter/components/NadeFilter';
 import { filterNadeListByNadeFilterResult } from '../features/filter/functions';
@@ -16,13 +18,11 @@ export function Index() {
 
 	return (
 		<main>
-			<h1>Counter-Strike: Global Offensive nades</h1>
-
-			<div style={{ marginBlockEnd: '4rem' }}>
+			<Flow>
+				<Heading>Counter-Strike: Global Offensive nades</Heading>
 				<NadeFilter nadeFilter={nadeFilter} nadeList={nadeList} onChange={setNadeFilter} />
-			</div>
-
-			<NadeItemList nades={nadeListResult} />
+				<NadeItemList nades={nadeListResult} />
+			</Flow>
 		</main>
 	);
 }

@@ -43,11 +43,6 @@ export const NadeItem: FunctionalComponent<{ nade: NadeThrow }> = ({ nade }) => 
 export const NadeItemPreview: FunctionalComponent<{
 	nade: NadeThrow;
 }> = ({ nade }) => {
-	const listFormatter = new Intl.ListFormat('en', {
-		style: 'narrow',
-		type: 'conjunction',
-	});
-
 	const videoReference = createRef();
 
 	return (
@@ -67,22 +62,7 @@ export const NadeItemPreview: FunctionalComponent<{
 						))}
 					</video>
 
-					<div
-						style={{
-							display: 'flex',
-							flexFlow: 'row nowrap',
-							padding: '1rem',
-							color: '#fff',
-							fontSize: '2rem',
-							lineHeight: '2rem',
-							backgroundColor: 'var(--color-primary)',
-							position: 'absolute',
-							right: '0',
-							top: '0',
-							borderBottomLeftRadius: '1rem',
-							boxShadow: 'var(--elevation-2)',
-						}}
-					>
+					<div class={styles.previewStanceBlock}>
 						<NadeStanceIcon height="32" stance={nade.throw.stance} />
 						<NadeMovementIcon movement={nade.throw.movement} />
 					</div>

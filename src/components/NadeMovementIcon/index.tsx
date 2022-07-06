@@ -27,7 +27,10 @@ const getSymbol = (movement: ThrowFlag[]) => {
 
 export const NadeMovementIcon: FunctionalComponent<{ movement: ThrowFlag[] }> = ({ movement }) => {
 	const symbol = getSymbol(movement);
-	const formatter = new Intl.ListFormat();
+	const formatter = new Intl.ListFormat('en', {
+		style: 'narrow',
+		type: 'conjunction',
+	});
 
 	return (
 		<span

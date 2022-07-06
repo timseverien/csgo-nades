@@ -1,4 +1,8 @@
 .nadeFilterLabel {
 	font-weight: bold;
-	margin-bottom: 0.25rem;
+	margin-bottom: var(--step--2);
+}
+
+.nadeFilterValue {
+	margin-bottom: var(--step-0);
 }

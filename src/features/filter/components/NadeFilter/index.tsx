@@ -15,7 +15,7 @@ import styles from './style.module.css';
 const FilterRow: FunctionalComponent<{ label: string }> = ({ children, label }) => (
 	<>
 		<dt class={styles.nadeFilterLabel}>{label}</dt>
-		<dd>{children}</dd>
+		<dd class={styles.nadeFilterValue}>{children}</dd>
 	</>
 );
 
@@ -52,7 +52,7 @@ export const NadeFilter: FunctionalComponent<{
 	}));
 
 	return (
-		<dl>
+		<dl class={styles.nadeFilter}>
 			<FilterRow label="Map">
 				<PillList
 					options={mapOptions}

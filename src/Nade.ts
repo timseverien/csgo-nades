@@ -11,20 +11,20 @@ export enum ThrowDifficulty {
 
 export enum ThrowFlag {
 	jump = 'jump',
-	movingBackwards = 'move backward',
-	movingForward = 'move forward',
-	movingLeft = 'move left',
-	movingRight = 'move right',
+	movingBackwards = 'run backward',
+	movingForward = 'run forward',
+	movingLeft = 'run left',
+	movingRight = 'run right',
 }
 
 export enum ThrowStance {
-	crouching = 'crouching',
-	standing = 'standing',
+	crouching = 'crouch',
+	standing = 'stand up',
 }
 
-interface ImageSource {
+export interface ImageSource {
 	url: string;
-	type: 'image/jpg' | 'image/webp';
+	type: 'image/jpg' | 'image/png' | 'image/webp';
 }
 
 interface VideoSource {
@@ -36,6 +36,7 @@ interface VideoSource {
 export interface NadeThrow {
 	map: string;
 	throwAnimationUrl: VideoSource[];
+	throwLandImageUrl: ImageSource[];
 	throwPointImageUrl: ImageSource[];
 	throwReleaseImageUrl?: ImageSource[];
 	tickRate: number;

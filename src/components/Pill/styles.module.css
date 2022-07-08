@@ -1,6 +1,7 @@
 .pill {
+	--pill-foreground: var(--color-foreground-faded);
+
 	--color-background: transparent;
-	--color-foreground: #666;
 	--color-outline: transparent;
 
 	display: inline-block;
@@ -10,12 +11,11 @@
 	background-color: var(--color-background);
 	border: 1px solid var(--color-outline);
 
-	color: var(--color-foreground);
+	color: var(--pill-foreground);
 }
 
 .pillActive {
-	--color-foreground: #fff;
-	--color-underline: var(--color-foreground);
+	--pill-foreground: var(--color-foreground-on-primary);
 	--color-background: var(--color-primary);
 }
 

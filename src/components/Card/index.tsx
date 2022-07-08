@@ -11,3 +11,7 @@ export const Card: FunctionalComponent<{
 		</div>
 	);
 };
+
+export const SimpleCard: FunctionalComponent = ({ children }) => {
+	return <div class={style.card}>{children}</div>;
+};

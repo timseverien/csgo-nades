@@ -1,3 +1,12 @@
+.difficulty {
+	position: absolute;
+	left: var(--step--4);
+	top: var(--step--4);
+	z-index: 1;
+
+	font-size: var(--step--1);
+}
+
 .instructionImage {
 	display: block;
 	overflow: hidden;
@@ -37,6 +46,7 @@
 	display: grid;
 	grid-template-columns: 1fr 10rem;
 	grid-template-rows: min-content min-content;
+	position: relative;
 }
 
 .lineupList {

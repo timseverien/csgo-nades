@@ -72,10 +72,13 @@ export const NadeThrowCard: FunctionalComponent<{ nade: NadeThrow }> = ({ nade }
 	const cardHeader = (
 		<Layout>
 			<Video controls loop class={style.video} sources={videos as NonEmptyArray<VideoSource>} />
-			<LineupImage text="Lineup" variant={lineupImageVariant} images={lineupImages} />
+			<LineupImage text="lineup" variant={lineupImageVariant} images={lineupImages} />
 			{lineupReleaseImages.length > 0 && (
-				<LineupImage text="Release" images={lineupReleaseImages} />
+				<LineupImage text="release" images={lineupReleaseImages} />
 			)}
+			<span class={style.difficulty}>
+				<Pill variant={PillVariant.contained}>{nade.difficulty}</Pill>
+			</span>
 		</Layout>
 	);
 

@@ -18,9 +18,12 @@
 	--pill-foreground: var(--color-foreground-on-primary);
 	--pill-background: var(--color-primary);
 }
+
 .pillContained {
 	--pill-foreground: var(--color-foreground);
 	--pill-background: var(--color-background);
+
+	box-sizing: var(--elevation-1);
 }
 
 .pillList {

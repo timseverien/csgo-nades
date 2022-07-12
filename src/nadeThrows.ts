@@ -79,7 +79,7 @@ export const nadeThrows: NadeThrow[] = [
 		id: 'de_mirage-64-t-spawn-to-ct',
 		map: 'de_mirage',
 		tickRate: 64,
-		difficulty: NadeThrowDifficulty.medium,
+		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
 		lineup: [0, 0, 0],
@@ -115,7 +115,7 @@ export const nadeThrows: NadeThrow[] = [
 		id: 'de_mirage-64-t-spawn-to-shops-door',
 		map: 'de_mirage',
 		tickRate: 64,
-		difficulty: NadeThrowDifficulty.hard,
+		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
 		lineup: [0, 0, 0],
@@ -153,7 +153,7 @@ export const nadeThrows: NadeThrow[] = [
 		id: 'de_mirage-64-t-spawn-to-short',
 		map: 'de_mirage',
 		tickRate: 64,
-		difficulty: NadeThrowDifficulty.hard,
+		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
 		lineup: [0, 0, 0],
@@ -171,7 +171,7 @@ export const nadeThrows: NadeThrow[] = [
 		id: 'de_mirage-64-t-spawn-to-window',
 		map: 'de_mirage',
 		tickRate: 64,
-		difficulty: NadeThrowDifficulty.hard,
+		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
 		lineup: [0, 0, 0],
@@ -190,7 +190,7 @@ export const nadeThrows: NadeThrow[] = [
 		id: 'de_mirage-64-top-mid-to-b-site',
 		map: 'de_mirage',
 		tickRate: 64,
-		difficulty: NadeThrowDifficulty.hard,
+		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
 		lineup: [0, 0, 0],
@@ -199,7 +199,7 @@ export const nadeThrows: NadeThrow[] = [
 			position: [0, 0, 0],
 		},
 		to: {
-			name: 'Short',
+			name: 'B (site)',
 			position: [0, 0, 0],
 		},
 	},
@@ -208,7 +208,7 @@ export const nadeThrows: NadeThrow[] = [
 		id: 'de_mirage-64-top-mid-to-firebox',
 		map: 'de_mirage',
 		tickRate: 64,
-		difficulty: NadeThrowDifficulty.hard,
+		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
 		lineup: [0, 0, 0],
@@ -226,7 +226,7 @@ export const nadeThrows: NadeThrow[] = [
 		id: 'de_mirage-64-top-mid-to-short',
 		map: 'de_mirage',
 		tickRate: 64,
-		difficulty: NadeThrowDifficulty.hard,
+		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
 		lineup: [0, 0, 0],

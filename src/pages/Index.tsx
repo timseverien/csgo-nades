@@ -1,27 +1,33 @@
 import { useState } from 'preact/hooks';
 import { Flow } from '../components/Flow';
-import { Heading } from '../components/Heading';
-import { NadeItemList } from '../components/NadeItem';
-import { NadeFilter } from '../features/filter/components/NadeFilter';
-import { filterNadeListByNadeFilterResult } from '../features/filter/functions';
-import nadeList from '../tricknades';
+import { VisuallyHidden } from '../components/VisuallyHidden';
+import { NadeThrowList } from '../features/NadeThrow/components/NadeThrowList';
+import { NadeThrowFilter } from '../features/NadeThrowFilter/components/NadeThrowFilter';
+import { filterNadeListByNadeFilterResult } from '../features/NadeThrowFilter/functions';
+import { NadeThrowFilterOptions } from '../features/NadeThrowFilter/types';
+import { nadeThrows } from '../nadeThrows';
 
 export function Index() {
-	const [nadeFilter, setNadeFilter] = useState({
-		location: null,
+	const [filterOptions, setNadeFilter] = useState<NadeThrowFilterOptions>({
+		from: null,
 		map: 'de_mirage',
-		target: null,
 		tickRate: 64,
+		to: null,
 	});
 
-	const nadeListResult = filterNadeListByNadeFilterResult(nadeList, nadeFilter);
+	const nadeThrowsFiltered = filterNadeListByNadeFilterResult(nadeThrows, filterOptions);
 
 	return (
 		<main>
+			<VisuallyHidden component="h1">Counter-Strike: Global Offensive nades</VisuallyHidden>
+
 			<Flow>
-				<Heading>Counter-Strike: Global Offensive nades</Heading>
-				<NadeFilter nadeFilter={nadeFilter} nadeList={nadeList} onChange={setNadeFilter} />
-				<NadeItemList nades={nadeListResult} />
+				<NadeThrowFilter
+					filterOptions={filterOptions}
+					nadeList={nadeThrows}
+					onChange={setNadeFilter}
+				/>
+				<NadeThrowList nades={nadeThrowsFiltered} />
 			</Flow>
 		</main>
 	);

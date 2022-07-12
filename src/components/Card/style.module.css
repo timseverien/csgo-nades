@@ -9,7 +9,3 @@
 .content {
 	padding: var(--step-0) var(--step--1);
 }
-
-.header {
-	position: relative;
-}

@@ -1,0 +1,8 @@
+.label {
+	font-weight: bold;
+	margin-bottom: var(--step--2);
+}
+
+.value {
+	margin-bottom: var(--step-0);
+}

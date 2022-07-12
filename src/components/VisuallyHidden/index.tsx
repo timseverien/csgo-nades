@@ -1,9 +1,9 @@
 import { FunctionComponent } from 'preact';
-import styles from './styles.module.css';
+import style from './style.module.css';
 
 export const VisuallyHidden: FunctionComponent<{ component?: string }> = ({
 	children,
 	component: Component = 'div',
 }) => {
-	return <Component class={styles.visuallyHidden}>{children}</Component>;
+	return <Component class={style.visuallyHidden}>{children}</Component>;
 };

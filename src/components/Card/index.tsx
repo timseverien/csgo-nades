@@ -6,7 +6,7 @@ export const Card: FunctionalComponent<{
 }> = ({ children, header }) => {
 	return (
 		<div class={style.card}>
-			{header && <div class={style.header}>{header}</div>}
+			{header}
 			<div class={style.content}>{children}</div>
 		</div>
 	);

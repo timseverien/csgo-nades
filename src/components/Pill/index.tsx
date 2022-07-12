@@ -1,38 +1,45 @@
 import { FunctionalComponent } from 'preact';
 import { ButtonUnstyled } from '../Button';
-import styles from './styles.module.css';
+import style from './style.module.css';
 
-function getVariantStyle(variant: string): string {
+export enum PillVariant {
+	active,
+	contained,
+}
+
+function getVariantStyle(variant?: PillVariant): string {
 	switch (variant) {
-		case 'active':
-			return `${styles.pill} ${styles.pillActive}`;
+		case PillVariant.active:
+			return `${style.pill} ${style.pillActive}`;
+		case PillVariant.contained:
+			return `${style.pill} ${style.pillContained}`;
 		default:
-			return styles.pill;
+			return style.pill;
 	}
 }
 
-export type PillListOptionValue = number | string;
+export type PillListOptionValue = number | string | null;
 
-interface PillListOption {
+export interface PillListOption {
 	label: string;
 	value: PillListOptionValue;
 }
 
 interface PillListProps {
 	includeAll?: boolean;
-	options: PillListOption[] | PillListOptionValue[];
+	options: PillListOption[];
 	value: PillListOptionValue;
 	onSelect: (value: PillListOptionValue) => any;
 }
 
 export const Pill: FunctionalComponent<{
-	variant: string;
+	variant?: PillVariant;
 }> = ({ children, variant }) => {
 	return <span class={getVariantStyle(variant)}>{children}</span>;
 };
 
 export const PillButton: FunctionalComponent<{
-	variant: string;
+	variant?: PillVariant;
 	onClick: () => any;
 }> = ({ children, variant, onClick }) => {
 	return (
@@ -48,23 +55,12 @@ export const PillList: FunctionalComponent<PillListProps> = ({
 	value: currentValue,
 	onSelect,
 }) => {
-	const optionObjects = options.map((option: PillListOption | PillListOptionValue) => {
-		if (typeof option === 'string' || typeof option === 'number') {
-			return {
-				label: option.toString(),
-				value: option,
-			};
-		}
-
-		return option;
-	});
-
 	return (
-		<ul class={styles.pillList}>
+		<ul class={style.pillList}>
 			{includeAll && (
 				<li>
 					<PillButton
-						variant={currentValue === null ? 'active' : null}
+						variant={currentValue === null ? PillVariant.active : undefined}
 						onClick={() => onSelect(null)}
 					>
 						All
@@ -72,10 +68,10 @@ export const PillList: FunctionalComponent<PillListProps> = ({
 				</li>
 			)}
 
-			{optionObjects.map(({ label, value }) => (
+			{options.map(({ label, value }) => (
 				<li key={value}>
 					<PillButton
-						variant={value === currentValue ? 'active' : null}
+						variant={value === currentValue ? PillVariant.active : undefined}
 						onClick={() => onSelect(value)}
 					>
 						{label}

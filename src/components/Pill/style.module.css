@@ -1,0 +1,37 @@
+.pill {
+	--pill-foreground: var(--color-foreground-faded);
+
+	--pill-background: transparent;
+	--color-outline: transparent;
+
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	border-radius: 1rem;
+
+	background-color: var(--pill-background);
+	border: 1px solid var(--color-outline);
+
+	color: var(--pill-foreground);
+}
+
+.pillActive {
+	--pill-foreground: var(--color-foreground-on-primary);
+	--pill-background: var(--color-primary);
+}
+.pillContained {
+	--pill-foreground: var(--color-foreground);
+	--pill-background: var(--color-background);
+}
+
+.pillList {
+	display: flex;
+	padding: 0;
+	margin: 0;
+
+	flex-flow: row wrap;
+	list-style-type: none;
+}
+
+.pillList + .pillList {
+	margin-top: 0.5rem;
+}

@@ -1,0 +1,52 @@
+.instructionImage {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.instructionText {
+	position: absolute;
+	right: var(--step--4);
+	top: var(--step--4);
+	z-index: 1;
+
+	font-size: var(--step--1);
+}
+
+.instructionImage img {
+	transform: scale(1);
+	transition: transform 0.2s;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.instructionImageLarge {
+	grid-row: span 2;
+}
+
+.instructionImageLarge img {
+	width: auto;
+}
+
+.instructionImage:hover img {
+	transform: scale(3);
+}
+
+.layout {
+	display: grid;
+	grid-template-columns: 1fr 10rem;
+	grid-template-rows: min-content min-content;
+}
+
+.lineupList {
+	display: flex;
+	flex-flow: column;
+}
+
+.video {
+	object-fit: cover;
+	grid-row: span 2;
+	aspect-ratio: 16/9;
+	width: 100%;
+}

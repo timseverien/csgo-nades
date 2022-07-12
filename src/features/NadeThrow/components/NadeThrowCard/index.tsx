@@ -1,4 +1,4 @@
-import { capitalize } from 'lodash';
+import _ from 'lodash';
 import { FunctionalComponent } from 'preact';
 import {
 	NadeThrow,
@@ -32,7 +32,7 @@ function createInstructions(listFormatter: Intl.ListFormat, nade: NadeThrow): st
 		TECHNIQUE_INTSTRUCTION_MAPPING[nade.technique],
 	].filter((i) => typeof i === 'string') as string[];
 
-	return capitalize(listFormatter.format(instructions));
+	return _.capitalize(listFormatter.format(instructions));
 }
 
 const Layout: FunctionalComponent = ({ children }) => <div class={style.layout}>{children}</div>;

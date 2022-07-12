@@ -67,7 +67,7 @@ export const NadeThrowCard: FunctionalComponent<{ nade: NadeThrow }> = ({ nade }
 		return null;
 	}
 
-	const lineupImageVariant = lineupReleaseImages.length === 0 ? 'large' : null;
+	const lineupImageVariant = lineupReleaseImages.length === 0 ? 'large' : undefined;
 
 	const cardHeader = (
 		<Layout>

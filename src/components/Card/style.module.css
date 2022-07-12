@@ -1,6 +1,6 @@
 .card {
-	background-color: var(--color-foreground);
-	color: var(--color-background);
+	background-color: #1a2136;
+	color: var(--color-foreground);
 	border-radius: var(--border-radius-m);
 	box-shadow: var(--elevation-1);
 	overflow: hidden;

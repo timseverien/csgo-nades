@@ -1,12 +1,12 @@
 import { useState } from 'preact/hooks';
-import { TickRate } from '../NadeThrow';
-import { Flow } from '../components/Flow';
-import { VisuallyHidden } from '../components/VisuallyHidden';
-import { NadeThrowList } from '../features/NadeThrow/components/NadeThrowList';
-import { NadeThrowFilter } from '../features/NadeThrowFilter/components/NadeThrowFilter';
-import { filterNadeListByNadeFilterResult } from '../features/NadeThrowFilter/functions';
-import { NadeThrowFilterOptions } from '../features/NadeThrowFilter/types';
-import { nadeThrows } from '../nadeThrows';
+import { TickRate } from '../../NadeThrow';
+import { NadeThrowList } from '../../features/NadeThrow/components/NadeThrowList';
+import { NadeThrowFilter } from '../../features/NadeThrowFilter/components/NadeThrowFilter';
+import { filterNadeListByNadeFilterResult } from '../../features/NadeThrowFilter/functions';
+import { NadeThrowFilterOptions } from '../../features/NadeThrowFilter/types';
+import { nadeThrows } from '../../nadeThrows';
+import { Flow } from '../Flow';
+import { VisuallyHidden } from '../VisuallyHidden';
 
 export function Index() {
 	const [filterOptions, setNadeFilter] = useState<NadeThrowFilterOptions>({

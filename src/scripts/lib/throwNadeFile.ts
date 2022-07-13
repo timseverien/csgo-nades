@@ -1,9 +1,10 @@
 import * as path from 'path';
+import { TickRate, getTickRateByNumber } from '../../NadeThrow';
 
 export interface FileNameNadeThrowInfo {
 	fileName: string;
 	map: string;
-	tickRate: number;
+	tickRate: TickRate;
 	location: string;
 	target: string;
 }
@@ -22,7 +23,7 @@ export function getFileInfo(fileName: string): FileNameNadeThrowInfo | null {
 	return {
 		fileName,
 		map,
-		tickRate: Number.parseInt(tickRate, 10),
+		tickRate: getTickRateByNumber(Number.parseInt(tickRate, 10)),
 		location,
 		target,
 	};

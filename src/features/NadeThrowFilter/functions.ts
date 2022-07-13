@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { NadeThrow } from '../../NadeThrow';
+import { NadeThrow, TickRate } from '../../NadeThrow';
 import { NadeThrowFilterOptions } from './types';
 
 export const createFromListFromNadeList: (nadeList: NadeThrow[]) => string[] = (nadeList) => {
@@ -14,12 +14,24 @@ export const createMapListFromNadeList: (nadeList: NadeThrow[]) => string[] = (n
 	return _.uniq(maps).sort((a, b) => a.localeCompare(b));
 };
 
-export const createTickRateOptionsFromNadeList: (nadeList: NadeThrow[]) => number[] = (
+export const createTickRateOptionsFromNadeList: (nadeList: NadeThrow[]) => TickRate[] = (
 	nadeList,
 ) => {
-	const maps = nadeList.map((n) => n.tickRate);
+	if (nadeList.some((n) => n.tickRate === TickRate.any)) {
+		return [TickRate.low, TickRate.high];
+	}
 
-	return _.uniq(maps).sort((a, b) => a.toString().localeCompare(b.toString()));
+	const options: TickRate[] = [];
+
+	if (nadeList.some((n) => n.tickRate === TickRate.low)) {
+		options.push(TickRate.low);
+	}
+
+	if (nadeList.some((n) => n.tickRate === TickRate.high)) {
+		options.push(TickRate.high);
+	}
+
+	return options;
 };
 
 export const createToListFromNadeList: (nadeList: NadeThrow[]) => string[] = (nadeList) => {
@@ -33,7 +45,7 @@ export const filterNadeListByNadeFilterResult: (
 	filterOptions: NadeThrowFilterOptions,
 ) => NadeThrow[] = (nadeList, filterOptions) => {
 	let result = nadeList
-		.filter((n) => n.tickRate === filterOptions.tickRate)
+		.filter((n) => n.tickRate === TickRate.any || n.tickRate === filterOptions.tickRate)
 		.filter((n) => n.map === filterOptions.map);
 
 	if (filterOptions.from) {

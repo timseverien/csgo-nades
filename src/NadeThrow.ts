@@ -5,7 +5,11 @@ interface Position {
 	position: Coordinate3D;
 }
 
-type TickRate = 64 | 128;
+export enum TickRate {
+	any = 0,
+	low = 64,
+	high = 128,
+}
 
 export enum NadeThrowDifficulty {
 	easy = 'easy',
@@ -81,6 +85,17 @@ export function getNadeLineupReleaseImageSources(nade: MovingNadeThrow): ImageSo
 			url: `nades/${fileName}.webp`,
 		},
 	];
+}
+
+export function getTickRateByNumber(n: number): TickRate {
+	switch (n) {
+		case 64:
+			return TickRate.low;
+		case 128:
+			return TickRate.high;
+		default:
+			return TickRate.any;
+	}
 }
 
 export function isMovingNadeThrow(nade: NadeThrow): nade is MovingNadeThrow {

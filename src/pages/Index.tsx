@@ -1,4 +1,5 @@
 import { useState } from 'preact/hooks';
+import { TickRate } from '../NadeThrow';
 import { Flow } from '../components/Flow';
 import { VisuallyHidden } from '../components/VisuallyHidden';
 import { NadeThrowList } from '../features/NadeThrow/components/NadeThrowList';
@@ -11,7 +12,7 @@ export function Index() {
 	const [filterOptions, setNadeFilter] = useState<NadeThrowFilterOptions>({
 		from: null,
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		to: null,
 	});
 

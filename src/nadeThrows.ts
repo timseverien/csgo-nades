@@ -1,11 +1,11 @@
-import { NadeThrow, NadeThrowDifficulty, NadeThrowTechnique } from './NadeThrow';
+import { NadeThrow, NadeThrowDifficulty, NadeThrowTechnique, TickRate } from './NadeThrow';
 
 export const nadeThrows: NadeThrow[] = [
 	{
 		__type: 'stationary',
 		id: 'de_mirage-64-ct-spawn-to-palace',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -23,7 +23,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'stationary',
 		id: 'de_mirage-64-ct-spawn-to-ramp',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -41,7 +41,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'moving',
 		id: 'de_mirage-64-t-spawn-to-bench',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -60,7 +60,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'stationary',
 		id: 'de_mirage-64-t-spawn-to-connector',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -78,7 +78,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'stationary',
 		id: 'de_mirage-64-t-spawn-to-ct',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -96,7 +96,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'stationary',
 		id: 'de_mirage-64-t-spawn-to-jungle',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -114,7 +114,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'moving',
 		id: 'de_mirage-64-t-spawn-to-shops-door',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -133,7 +133,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'moving',
 		id: 'de_mirage-64-t-spawn-to-shops-window',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.hard,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -152,7 +152,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'stationary',
 		id: 'de_mirage-64-t-spawn-to-short',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -170,7 +170,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'moving',
 		id: 'de_mirage-64-t-spawn-to-window',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -189,7 +189,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'stationary',
 		id: 'de_mirage-64-top-mid-to-b-site',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -207,7 +207,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'stationary',
 		id: 'de_mirage-64-top-mid-to-firebox',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
@@ -225,7 +225,7 @@ export const nadeThrows: NadeThrow[] = [
 		__type: 'stationary',
 		id: 'de_mirage-64-top-mid-to-short',
 		map: 'de_mirage',
-		tickRate: 64,
+		tickRate: TickRate.low,
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 

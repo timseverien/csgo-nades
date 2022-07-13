@@ -3,6 +3,114 @@ import { NadeThrow, NadeThrowDifficulty, NadeThrowTechnique, TickRate } from './
 export const nadeThrows: NadeThrow[] = [
 	{
 		__type: 'stationary',
+		id: 'de_mirage-64-back-alley-to-bench',
+		map: 'de_mirage',
+		tickRate: TickRate.low,
+		difficulty: NadeThrowDifficulty.easy,
+		technique: NadeThrowTechnique.JumpThrow,
+
+		lineup: [0, 0, 0],
+		from: {
+			name: 'Back alley',
+			position: [0, 0, 0],
+		},
+		to: {
+			name: 'Bench',
+			position: [0, 0, 0],
+		},
+	},
+	{
+		__type: 'stationary',
+		id: 'de_mirage-64-back-alley-to-bench-2',
+		map: 'de_mirage',
+		tickRate: TickRate.low,
+		difficulty: NadeThrowDifficulty.easy,
+		technique: NadeThrowTechnique.JumpThrow,
+
+		lineup: [0, 0, 0],
+		from: {
+			name: 'Back alley',
+			position: [0, 0, 0],
+		},
+		to: {
+			name: 'Bench',
+			position: [0, 0, 0],
+		},
+	},
+	{
+		__type: 'stationary',
+		id: 'de_mirage-64-back-alley-to-connector',
+		map: 'de_mirage',
+		tickRate: TickRate.any,
+		difficulty: NadeThrowDifficulty.easy,
+		technique: NadeThrowTechnique.MouseLeft,
+
+		lineup: [0, 0, 0],
+		from: {
+			name: 'Back alley',
+			position: [0, 0, 0],
+		},
+		to: {
+			name: 'Connector',
+			position: [0, 0, 0],
+		},
+	},
+	{
+		__type: 'stationary',
+		id: 'de_mirage-64-back-alley-to-van',
+		map: 'de_mirage',
+		tickRate: TickRate.low,
+		difficulty: NadeThrowDifficulty.easy,
+		technique: NadeThrowTechnique.JumpThrow,
+
+		lineup: [0, 0, 0],
+		from: {
+			name: 'Back alley',
+			position: [0, 0, 0],
+		},
+		to: {
+			name: 'Van',
+			position: [0, 0, 0],
+		},
+	},
+	{
+		__type: 'stationary',
+		id: 'de_mirage-64-back-alley-to-short',
+		map: 'de_mirage',
+		tickRate: TickRate.any,
+		difficulty: NadeThrowDifficulty.easy,
+		technique: NadeThrowTechnique.MouseLeft,
+
+		lineup: [0, 0, 0],
+		from: {
+			name: 'Back alley',
+			position: [0, 0, 0],
+		},
+		to: {
+			name: 'Short',
+			position: [0, 0, 0],
+		},
+	},
+	{
+		__type: 'stationary',
+		id: 'de_mirage-64-back-alley-to-shops-window',
+		map: 'de_mirage',
+		tickRate: TickRate.low,
+		difficulty: NadeThrowDifficulty.easy,
+		technique: NadeThrowTechnique.JumpThrow,
+
+		lineup: [0, 0, 0],
+		from: {
+			name: 'Back alley',
+			position: [0, 0, 0],
+		},
+		to: {
+			name: 'Shops (window)',
+			position: [0, 0, 0],
+		},
+	},
+	{
+		__type: 'stationary',
 		id: 'de_mirage-64-ct-spawn-to-palace',
 		map: 'de_mirage',
 		tickRate: TickRate.low,
@@ -34,6 +142,43 @@ export const nadeThrows: NadeThrow[] = [
 		},
 		to: {
 			name: 'Ramp',
+			position: [0, 0, 0],
+		},
+	},
+	{
+		__type: 'stationary',
+		id: 'de_mirage-64-t-roof-to-a-site',
+		map: 'de_mirage',
+		tickRate: TickRate.any,
+		difficulty: NadeThrowDifficulty.medium,
+		technique: NadeThrowTechnique.MouseLeft,
+
+		lineup: [0, 0, 0],
+		from: {
+			name: 'T roof',
+			position: [0, 0, 0],
+		},
+		to: {
+			name: 'A site',
+			position: [0, 0, 0],
+		},
+	},
+	{
+		__type: 'moving',
+		id: 'de_mirage-64-t-spawn-to-a-site',
+		map: 'de_mirage',
+		tickRate: TickRate.any,
+		difficulty: NadeThrowDifficulty.medium,
+		technique: NadeThrowTechnique.JumpThrow,
+
+		lineup: [0, 0, 0],
+		from: {
+			name: 'T spawn',
+			position: [0, 0, 0],
+		},
+		fromRelease: [0, 0, 0],
+		to: {
+			name: 'A site',
 			position: [0, 0, 0],
 		},
 	},

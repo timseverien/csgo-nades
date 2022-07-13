@@ -1,9 +1,4 @@
-import { Angle3D, Coordinate3D, ImageSource, VideoSource } from './generic';
-
-interface Position {
-	name: string;
-	position: Coordinate3D;
-}
+import { ImageSource, VideoSource } from './generic';
 
 export enum TickRate {
 	any = 0,
@@ -28,16 +23,12 @@ interface NadeThrowBase {
 	map: string;
 	technique: NadeThrowTechnique;
 	tickRate: TickRate;
-	to: Position;
-
-	from: Position;
-	lineup: Angle3D;
+	to: string;
+	from: string;
 }
 
 interface Moving {
 	__type: 'moving';
-
-	fromRelease: Coordinate3D;
 }
 
 interface Stationary {

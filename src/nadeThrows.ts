@@ -9,15 +9,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'Back alley',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Bench',
-			position: [0, 0, 0],
-		},
+		from: 'Back alley',
+		to: 'Bench',
 	},
 	{
 		__type: 'stationary',
@@ -27,15 +20,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'Back alley',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Bench',
-			position: [0, 0, 0],
-		},
+		from: 'Back alley',
+		to: 'Bench',
 	},
 	{
 		__type: 'stationary',
@@ -45,15 +31,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.MouseLeft,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'Back alley',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Connector',
-			position: [0, 0, 0],
-		},
+		from: 'Back alley',
+		to: 'Connector',
 	},
 	{
 		__type: 'stationary',
@@ -63,15 +42,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'Back alley',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Van',
-			position: [0, 0, 0],
-		},
+		from: 'Back alley',
+		to: 'Van',
 	},
 	{
 		__type: 'stationary',
@@ -81,15 +53,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.MouseLeft,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'Back alley',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Short',
-			position: [0, 0, 0],
-		},
+		from: 'Back alley',
+		to: 'Short',
 	},
 	{
 		__type: 'stationary',
@@ -99,15 +64,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'Back alley',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Shops (window)',
-			position: [0, 0, 0],
-		},
+		from: 'Back alley',
+		to: 'Shops (window)',
 	},
 	{
 		__type: 'stationary',
@@ -117,15 +75,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'CT spawn',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Palace',
-			position: [0, 0, 0],
-		},
+		from: 'CT spawn',
+		to: 'Palace',
 	},
 	{
 		__type: 'stationary',
@@ -135,15 +86,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'CT spawn',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Ramp',
-			position: [0, 0, 0],
-		},
+		from: 'CT spawn',
+		to: 'Ramp',
 	},
 	{
 		__type: 'stationary',
@@ -153,15 +97,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.MouseLeft,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T roof',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'A site',
-			position: [0, 0, 0],
-		},
+		from: 'T roof',
+		to: 'A (site)',
 	},
 	{
 		__type: 'moving',
@@ -171,16 +108,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T spawn',
-			position: [0, 0, 0],
-		},
-		fromRelease: [0, 0, 0],
-		to: {
-			name: 'A site',
-			position: [0, 0, 0],
-		},
+		from: 'T spawn',
+		to: 'A (site)',
 	},
 	{
 		__type: 'moving',
@@ -190,16 +119,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T spawn',
-			position: [0, 0, 0],
-		},
-		fromRelease: [0, 0, 0],
-		to: {
-			name: 'Bench',
-			position: [0, 0, 0],
-		},
+		from: 'T spawn',
+		to: 'Bench',
 	},
 	{
 		__type: 'stationary',
@@ -209,15 +130,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T spawn',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Connector',
-			position: [0, 0, 0],
-		},
+		from: 'T spawn',
+		to: 'Connector',
 	},
 	{
 		__type: 'stationary',
@@ -227,15 +141,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T spawn',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'CT spawn',
-			position: [0, 0, 0],
-		},
+		from: 'T spawn',
+		to: 'CT spawn',
 	},
 	{
 		__type: 'stationary',
@@ -245,15 +152,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T spawn',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Jungle',
-			position: [0, 0, 0],
-		},
+		from: 'T spawn',
+		to: 'Jungle',
 	},
 	{
 		__type: 'moving',
@@ -263,16 +163,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T spawn',
-			position: [0, 0, 0],
-		},
-		fromRelease: [0, 0, 0],
-		to: {
-			name: 'Shops (door)',
-			position: [0, 0, 0],
-		},
+		from: 'T spawn',
+		to: 'Shops (door)',
 	},
 	{
 		__type: 'moving',
@@ -282,16 +174,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.hard,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T spawn',
-			position: [0, 0, 0],
-		},
-		fromRelease: [0, 0, 0],
-		to: {
-			name: 'Shops (window)',
-			position: [0, 0, 0],
-		},
+		from: 'T spawn',
+		to: 'Shops (window)',
 	},
 	{
 		__type: 'stationary',
@@ -301,15 +185,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T spawn',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Short',
-			position: [0, 0, 0],
-		},
+		from: 'T spawn',
+		to: 'Short',
 	},
 	{
 		__type: 'moving',
@@ -319,16 +196,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'T spawn',
-			position: [0, 0, 0],
-		},
-		fromRelease: [0, 0, 0],
-		to: {
-			name: 'Window',
-			position: [0, 0, 0],
-		},
+		from: 'T spawn',
+		to: 'Window',
 	},
 	{
 		__type: 'stationary',
@@ -338,15 +207,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'Top mid',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'B (site)',
-			position: [0, 0, 0],
-		},
+		from: 'Top mid',
+		to: 'B (site)',
 	},
 	{
 		__type: 'stationary',
@@ -356,15 +218,8 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.medium,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'Top mid',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'A (firebox)',
-			position: [0, 0, 0],
-		},
+		from: 'Top mid',
+		to: 'A (firebox)',
 	},
 	{
 		__type: 'stationary',
@@ -374,14 +229,7 @@ export const nadeThrows: NadeThrow[] = [
 		difficulty: NadeThrowDifficulty.easy,
 		technique: NadeThrowTechnique.JumpThrow,
 
-		lineup: [0, 0, 0],
-		from: {
-			name: 'Top mid',
-			position: [0, 0, 0],
-		},
-		to: {
-			name: 'Short',
-			position: [0, 0, 0],
-		},
+		from: 'Top mid',
+		to: 'Short',
 	},
 ];

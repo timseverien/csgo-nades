@@ -30,7 +30,11 @@ export const NadeThrowFilter: FunctionalComponent<{
 	filterOptions: NadeThrowFilterOptions;
 	onChange: (result: NadeThrowFilterOptions) => any;
 }> = ({ nadeList, filterOptions, onChange }) => {
-	const mapOptions = createMapListFromNadeList(nadeList).map(createPillListOption);
+	const mapOptions = createMapListFromNadeList(nadeList).map((m) => ({
+		label: `${m} (${nadeList.filter((n) => n.map === m).length})`,
+		value: m,
+	}));
+
 	const tickRateOptions = createTickRateOptionsFromNadeList(nadeList).map((tr) => ({
 		label: tr.toString(),
 		value: tr,

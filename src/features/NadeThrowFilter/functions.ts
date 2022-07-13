@@ -3,7 +3,7 @@ import { NadeThrow, TickRate } from '../../NadeThrow';
 import { NadeThrowFilterOptions } from './types';
 
 export const createFromListFromNadeList: (nadeList: NadeThrow[]) => string[] = (nadeList) => {
-	const fromList = nadeList.map((n: NadeThrow) => n.from.name);
+	const fromList = nadeList.map((n: NadeThrow) => n.from);
 
 	return _.uniq(fromList).sort((a, b) => a.localeCompare(b));
 };
@@ -35,7 +35,7 @@ export const createTickRateOptionsFromNadeList: (nadeList: NadeThrow[]) => TickR
 };
 
 export const createToListFromNadeList: (nadeList: NadeThrow[]) => string[] = (nadeList) => {
-	const toList = nadeList.map((n: NadeThrow) => n.to.name);
+	const toList = nadeList.map((n: NadeThrow) => n.to);
 
 	return _.uniq(toList).sort((a, b) => a.localeCompare(b));
 };
@@ -49,11 +49,11 @@ export const filterNadeListByNadeFilterResult: (
 		.filter((n) => n.map === filterOptions.map);
 
 	if (filterOptions.from) {
-		result = result.filter((n) => n.from.name === filterOptions.from);
+		result = result.filter((n) => n.from === filterOptions.from);
 	}
 
 	if (filterOptions.to) {
-		result = result.filter((n) => n.to.name === filterOptions.to);
+		result = result.filter((n) => n.to === filterOptions.to);
 	}
 
 	return result;

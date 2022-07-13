@@ -89,7 +89,7 @@ export const NadeThrowCard: FunctionalComponent<{ nade: NadeThrow }> = ({ nade }
 			<dl>
 				<VisuallyHidden component="dt">Location</VisuallyHidden>
 				<dd>
-					{nade.from.name} <IconArrow title="to" size={12} /> {nade.to.name}
+					{nade.from} <IconArrow title="to" size={12} /> {nade.to}
 				</dd>
 
 				<VisuallyHidden component="dt">Technique</VisuallyHidden>

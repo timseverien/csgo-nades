@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Counter-Strike: Global Offensive nades</title>
+<link rel="stylesheet" href="/csgo-nades/assets/51f1fb60.077c762e.css" />
+<link rel="stylesheet" href="/csgo-nades/assets/4fbc101b.8667411d.css" /></head>
+
+<body>
+    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()};var a;{const l={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t)},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,i]=s;return e in l?l[e](i):void 0};customElements.get("astro-island")||customElements.define("astro-island",(a=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement?.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},i=this.querySelectorAll("template[data-astro-template]");for(const r of i)!r.closest(this.tagName)?.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove());for(const r of s)!r.closest(this.tagName)?.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML);const n=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,n,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}async connectedCallback(){window.addEventListener("astro:hydrate",this.hydrate),await import(this.getAttribute("before-hydration-url"));const s=JSON.parse(this.getAttribute("opts"));Astro[this.getAttribute("client")](async()=>{const e=this.getAttribute("renderer-url"),[i,{default:n}]=await Promise.all([import(this.getAttribute("component-url")),e?import(e):()=>()=>{}]);return this.Component=i[this.getAttribute("component-export")||"default"],this.hydrator=n,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},a.observedAttributes=["props"],a))}</script><astro-island uid="drAIF" component-url="/csgo-nades/Configs.f844f1ae.js" component-export="Configs" renderer-url="/csgo-nades/client.e5edc40a.js" props="{}" ssr="" client="load" before-hydration-url="data:text/javascript;charset=utf-8,//[no before-hydration script]" opts="{&quot;name&quot;:&quot;Configs&quot;,&quot;value&quot;:true}"><main class="_container_kjk9t_1"><div class="_flow_83kwo_1"><h1><div class="_visuallyHidden_1pclr_1">Counter-Strike: Global Offensive</div> Configs for nades</h1><h2>Jump throw bind</h2><p>Timing your throw while you jump is pretty hard. Not with this config! This lets you bind a button to perform a jump throw.</p><h3>Usage:</h3><ul><li>Pick the util you wish to throw</li><li>Hold down your mouse button to get ready to throw — but don’t release it yet!</li><li>Press <code>alt</code> to jump and release the nade</li></ul><pre><code>alias &quot;+jumpthrow&quot; &quot;+jump;-attack&quot;;
+alias &quot;-jumpthrow&quot; &quot;-jump&quot;;
+bind alt &quot;+jumpthrow&quot;</code></pre><h2>Practise nades</h2><p>Want to try some nades out without wasting valuable utils mid-match? The config below removes all distractions and temporarily shows the trajectory of your utils — perfect to tweak your nades or discover new ones!</p><h3>Usage:</h3><ul><li>After a loading a map, run the config below with <code>exec name_of_your_config_file</code></li><li>Press <code>]</code> to rethrow the last grenade — this allows you to observe the trajectory from another angle</li><li>Press <code>x</code> to fly around the map</li></ul><pre><code>bot_kick
+ammo_grenade_limit_total 5
+mp_autoteambalance 0
+mp_buy_anywhere 1
+mp_buytime 9999
+mp_freezetime 0
+mp_limitteams 0
+mp_maxmoney 60000
+mp_respawn_on_death_ct 1
+mp_respawn_on_death_t 1
+mp_roundtime 60
+mp_roundtime_defuse 60
+mp_startmoney 60000
+mp_warmup_end
+sv_cheats 1
+sv_grenade_trajectory 1
+sv_grenade_trajectory_time 15
+sv_infinite_ammo 1
+sv_showimpacts 1
+sv_showimpacts_time 10
+
+bind ] sv_rethrow_last_grenade
+bind x noclip</code></pre></div></main></astro-island>
+</body></html>
